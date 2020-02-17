@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.google.com/specimen/Poppins">    
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+    <div class="container full_body">
+          <div class="row">
+              <div class="left_section col-lg-6 col-sm-12">
+                  <h1>Learn to code by watching others</h1>
+                  <p>  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. </p>
+              </div>
+              <div class="right_section col-lg-6 col-sm-12">
+                  <button>Try it free 7 days <span>then $20/mo. thereafter</span></button>
+                  <form name = "myForm" onsubmit = "return(validate());">
+                      <input type="text" placeholder="First Name" name="firstname"><br>
+                      <input type="text" placeholder="Last Name" name="lastname"><br>
+                      <input type="email" placeholder="Email Address" name="emailaddress"><br>
+                      <input type="password" placeholder="Password" name="password"><br>
+                      <input type="submit" value="Claim your free trial"><br>
+                      <p>By clicking the button, you are agreeing to our <a class="terms">Terms and Services</a></p>
+                  
+                  </form>
+              </div>
+          </div>
+            <footer>
+            <p class="attribution">
+              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+              Coded by <a href="https://www.linkedin.com/in/nehal-nafady-b140b8118/" target="_blank">Nehal Nafady</a>.
+            </p>
+          </footer>
+    </div>
+
+
+
+    <script src="js/script.js"></script> 
+ 
+</body>
+</html>
