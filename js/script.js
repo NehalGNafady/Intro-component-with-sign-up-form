@@ -1,27 +1,19 @@
 /*global $ , alert , JQuery */
-function validate() {
-    
-    'use strict';
-      
-    if (document.myForm.firstname.value === "") {
-         document.write("First name can't be empty");
-        document.myForm.firstname.focus();
-        return false;
-    }
-    if (document.myForm.lastname.value === "") {
-        alert("Last name can't be empty!");
-        document.myForm.lastname.focus();
-        return false;
-    }
-    if (document.myForm.emailaddress.value === "") {
-        alert("Looks like this not an email");
-        document.myForm.emailaddress.focus();
-        return false;
-    }
-    if (document.myForm.password.value === "") {
-        alert("password can't be empty!");
-        document.myForm.password.focus();
-        return false;
-    }
-    return (true);
-}
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();

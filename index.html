@@ -20,15 +20,44 @@
               </div>
               <div class="right_section col-lg-6 col-sm-12">
                   <button>Try it free 7 days <span>then $20/mo. thereafter</span></button>
-                  <form name = "myForm" onsubmit = "return(validate());">
-                      <input type="text" placeholder="First Name" name="firstname"><br>
-                      <input type="text" placeholder="Last Name" name="lastname"><br>
-                      <input type="email" placeholder="Email Address" name="emailaddress"><br>
-                      <input type="password" placeholder="Password" name="password"><br>
-                      <input type="submit" value="Claim your free trial"><br>
-                      <p>By clicking the button, you are agreeing to our <a class="terms">Terms and Services</a></p>
                   
-                  </form>
+                 <form class="needs-validation" novalidate>
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="validationCustom01" placeholder="First Name" required>
+                          <div class="invalid-feedback">
+                            First Name Can't be empty
+                          </div>
+                        </div>
+                          
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="validationCustom02" placeholder="Last Name" required>
+                          <div class="invalid-feedback">
+                            Last Name Can't be empty
+                          </div>
+                        </div>
+                          
+                      
+                      <div class="form-group">
+                          <input type="email" class="form-control" id="validationCustom03" placeholder="Email Address" required>
+                          <div class="invalid-feedback">
+                            Looks like this isn't an email
+                          </div>
+                        </div>
+                          
+                        <div class="form-group">
+                          <input type="password" class="form-control" id="validationCustom04" placeholder="Password" required>
+                          <div class="invalid-feedback">
+                            Password Can't be empty
+                          </div>
+                        </div>                     
+                    
+                      <button class="claim btn" type="submit">Claim your free trial</button>
+                     
+                      <p>By clicking the button, you are agreeing to our <a class="terms">Terms and Services</a></p>
+
+                    </form>
+
+
               </div>
           </div>
             <footer>
